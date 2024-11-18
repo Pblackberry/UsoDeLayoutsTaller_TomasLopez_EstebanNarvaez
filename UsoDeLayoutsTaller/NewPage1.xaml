@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UsoDeLayoutsTaller.NewPage1"
+             Title="NewPage1">
+    <VerticalStackLayout>
+        <Label 
+            Text="Primer Texto: Le robaron 3 puntos a LIGA"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Label 
+            Text="Segundo Texto: LDU El mas Grande del Ecuador"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Label 
+            Text="Tercer Texto: IDV falso campeón van a perder contra el Orense"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Button
+            x:Name="Boton2"
+            Text="Ir a siguiente pagina"
+            Clicked="Boton2_Clicked"
+            />
+    </VerticalStackLayout>
+</ContentPage>

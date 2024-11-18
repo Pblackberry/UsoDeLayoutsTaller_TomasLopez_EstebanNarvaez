@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UsoDeLayoutsTaller.MainPage">
+
+    <ScrollView>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+                
+            <Button Grid.Column="1"
+                    Grid.Row="1"
+                x:Name="Boton1"
+                Text="Ir a siguiente pagina"
+               
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                Clicked="Boton1_Clicked"
+                />
+            <Rectangle Grid.Row="0" Grid.Column="0" Fill="HotPink"/>
+            <Rectangle Grid.Row="0" Grid.Column="1" Fill="Aqua"/>
+            <Rectangle Grid.Row="1" Grid.Column="0" Fill="Orange"/>
+
+        </Grid>
+
+    </ScrollView>
+
+</ContentPage>
