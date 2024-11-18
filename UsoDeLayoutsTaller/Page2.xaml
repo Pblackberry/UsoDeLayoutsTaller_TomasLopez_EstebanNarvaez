@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="UsoDeLayoutsTaller.Page2"
-             Title="Page2">
+             Title="Flex Layout">
     <ScrollView>
         <FlexLayout Direction="Column"
             AlignItems="Center"
@@ -10,19 +10,16 @@
             >
             <StackLayout Orientation="Horizontal">
                 <ImageButton 
-                Source="https://static.wikia.nocookie.net/platabush-wiki/images/b/b0/Uganda_Knuckles.jpg/revision/latest?cb=20191121032440" HeightRequest="100" WidthRequest="100"/>
+                Source="https://static.wikia.nocookie.net/platabush-wiki/images/b/b0/Uganda_Knuckles.jpg/revision/latest?cb=20191121032440" HeightRequest="100" WidthRequest="100"
+                    Clicked="ImageButton_Clicked"/>
                 <Label Text="Siguiente Pagina" VerticalOptions="Center" HorizontalOptions="Center"/>
             </StackLayout>
-            
-
-
-
-
-
-
-
-            <Button Text="Siguiente pagina"
-                    />
+            <StackLayout Orientation="Horizontal">
+                <ImageButton 
+                Source="https://i.redd.it/nuj8hdu0z7cd1.jpeg" HeightRequest="100" WidthRequest="100"
+                    Clicked="ImageButton_Clicked_1"/>
+                <Label Text="Pagina anterior" VerticalOptions="Center" HorizontalOptions="Center"/>
+            </StackLayout>
 
         </FlexLayout>
 
